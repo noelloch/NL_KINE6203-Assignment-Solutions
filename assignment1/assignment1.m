@@ -22,11 +22,11 @@
 
 % 1. Set the url of the matlab documentation to a variable called helpURL
 
-helpURL = ""
+helpURL = "https://www.mathworks.com/help/matlab/index.html"
 
 % 2. What does the command 'clear all' do?
 %
-% Answer: (Delete this text and write your answer)
+% Answer: clear all will remove all variables in the workspace
 %
 
 
@@ -34,14 +34,17 @@ helpURL = ""
 % numbers [1 7 21 32 67 32453]? Store your answer in a variable called
 % averageAnswer.
 
+averageAnswer = mean([1, 7, 21, 32, 67, 32453]) 
 
 
 % 4. What command would you type to see a list of all installed toolboxes?
 
-        %<- command goes here
+      %<- toolboxes = matlab.addons.toolbox.installedToolboxes
 
 % 5. Write some commands that would return a list of all of the available 
 % functions in the image processing toolbox? 
+
+helpImageProcessing = "https://www.mathworks.com/help/images/referencelist.html?type=function&category=index&s_tid=CRUX_topnav"
 
 
 
@@ -52,7 +55,7 @@ x = linspace(-2*pi,2*pi);
 y = sin(x);
 
 figure
-        %<- command goes here
+  plot(x,y) %<- command goes here
 
         
 
