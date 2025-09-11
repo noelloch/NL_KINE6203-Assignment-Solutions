@@ -64,7 +64,8 @@ figure
 % this function do and how would you use it?
 
 %
-% Answer: 
+% Answer: std can find the standard deviation. you would input std(_)
+% and input a variable into the parenthesis that is set to an array 
 %
 
 % 8. What are the 2 major types of loops that MATLAB supports? What is the
@@ -127,7 +128,7 @@ maxNameLength = 2048;
 originalWeightkg = 100;
 % Add your code on the next line
 originalWeightlbs = originalWeightkg*2.2
-originaWeightoz = 3527.4
+originaWeightoz = 3527.4;
 clear originaWeightoz
 
 
@@ -136,24 +137,24 @@ clear originaWeightoz
 % variable to the type int32 and store the result in a new variable (hint: this is known
 % as casting in computer programming). Use whos to check your result. 
 
-n = 3.5 
-N = cast(n, "int32")
+n = 3.5; 
+N = cast(n, "int32");
 
 
 
 % 16. Create a variable called weightInLBs to store a weight in pounds. Convert this to 
 % kilograms using an appropriate calculation or function and assign the result to a variable weightInKgs.
 
-weightInLBs = 160
-weightInKgs = weightInLBs/2.2
+weightInLBs = 160;
+weightInKgs = weightInLBs/2.2;
 
 
 % 18. Create a variable fTemp to store a temperature in degrees Fahrenheit (F). 
 % Convert this to degrees Celsius (C) using an appropriate 
 % calculation and store the result in a variable cTemp.
 
-fTemp = 80
-cTemp = (fTemp-32)/1.8
+fTemp = 80;
+cTemp = (fTemp-32)/1.8;
 
 
 
@@ -163,22 +164,22 @@ cTemp = (fTemp-32)/1.8
 % 8 6 4 2
 % Store your results with variable names vecA, vecB and vecC respectively.
 
-vecA = [2:3:4:5:6:7]
-vecB = [1.1000:1.3000:1.5000:1.7000]
-vecC = [8:6:4:2]
+vecA = [2:3:4:5:6:7];
+vecB = [1.1000:1.3000:1.5000:1.7000];
+vecC = [8:6:4:2];
 
 % 20. Give a MATLAB expression that would create a vector 
 % (assigned to a variable called vec) of 50 elements that range, equally spaced, 
 % from 0 to 2pi. 
 
-vec = linspace(0,2*pi,50)
+vec = linspace(0,2*pi,50);
 
 
 % 21. Using the colon operator and the transpose operator, 
 % create a column vector that has the values -1 to 1 in steps of 0.5.
 % Assign your answer to a variable called colVec.
 
-colVec = (-1:0.5:1)'
+colVec = (-1:0.5:1)';
 
 
 
@@ -187,29 +188,29 @@ colVec = (-1:0.5:1)'
 % inclusive range from 1 to 5. Create a matrix called resultMat of all zeros with the 
 % dimensions given by the values of rows and cols. The resultMat should
 % change each time you execute your code. 
-rows = randi([1,5],1)
-cols = randi([1,5],1) 
-resultMat = zeros(rows,cols)
+rows = randi([1,5],1);
+cols = randi([1,5],1); 
+resultMat = zeros(rows,cols);
 
 
 % 23. Create a vector of five random integers, each in the inclusive range 
 % from -10 to 10 assigned to a variable named originalVec. Perform each of 
 % the following on the original vector and store your results in appropriately 
 % named variables. (you should have a seperate line of code for each)
-originalVec = randi([-10, 10],1,5)
+originalVec = randi([-10, 10],1,5);
 
 % - subtract 3 from each element
-subVec = originalVec - 3
+subVec = originalVec - 3;
 
 % - count how many are positive
-positiveVec = originalVec>0
+positiveVec = originalVec>0;
 
 % - get the absolute value of each element
-absValueVec = abs(originalVec)
+absValueVec = abs(originalVec);
 
 
 % - find the maximum.
-maxVec = max(originalVec)
+maxVec = max(originalVec);
 
 
 % 24. Write some code that will calculate the area of a trapezoid. Create
@@ -217,10 +218,10 @@ maxVec = max(originalVec)
 % result of your calculation in a variable called trapArea. Comment your
 % code so that another user can understand what your code does. 
 
-base1 = 3
-base2 = 6
-height = 3
-trapArea = ((base1+base2)/2)*height 
+base1 = 3;
+base2 = 6;
+height = 3;
+trapArea = ((base1+base2)/2)*height; 
 % trapArea equals the area of a trapezoid
 
 
@@ -252,8 +253,8 @@ ROI = (totalRevenues - totalCosts) / totalCosts * 100;
 %%% Enter the code for your program below this line
 
 disp ('Hello World') 
-
-
+userInput = input('Enter text here', "s");
+disp(userInput);
 
 
 

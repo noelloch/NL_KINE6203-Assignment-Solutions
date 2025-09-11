@@ -252,7 +252,7 @@ ROI = (totalRevenues - totalCosts) / totalCosts * 100;
 %%% Enter the code for your program below this line
 
 disp ('Hello World') 
-
+userInput = input(Enter text here, "s")
 
 
 
